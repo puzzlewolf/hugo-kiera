@@ -21,7 +21,7 @@
     {{ $url_part := (delimit .Site.Params.google_fonts "|") | safeHTMLAttr }}
     <link {{ printf "href=\"//fonts.googleapis.com/css?family=%s\"" $url_part | safeHTMLAttr }} rel="stylesheet">
   {{ else}}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   {{ end }}
   {{ if .Site.Params.disableDarkModeCSS }}
   <link rel="stylesheet" type="text/css" href="{{ "css/styles-without-dark-mode.css" | relURL}}" />
